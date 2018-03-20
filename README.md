@@ -209,4 +209,4 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 };
 ```
 
-Thanks to [TestDome](https://www.testdome.com), [Stack Overflow](https://stackoverflow.com/) and [Codewars](https://www.codewars.com/)
+Thanks to [TestDome](https://www.testdome.com), [Codewars](https://www.codewars.com/) and [Stack Overflow](https://stackoverflow.com/)
