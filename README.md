@@ -209,4 +209,34 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 };
 ```
 
+### Question 6
+
+How to determine if a number is odd or even?
+
+### Solution 6
+
+```sh
+var input = prompt("How many numbers?");
+var even = 0;
+var odd = 0;
+
+function printOddEven(input) {
+	for (var i = 1; i <= input; i++) {
+		if (i === 0) {
+			document.write(i + " is even<br>");
+			even++;
+		} else if (i % 2 === 0) {
+			document.write(i + " is even<br>");
+			even++;			
+		} else {
+			document.write(i + " is odd<br>");
+			odd++;
+		}
+	}
+}
+
+printOddEven(input);
+alert("Total number of even: " + even + "\nTotal number of odd: " + odd);
+```
+
 Thanks to [TestDome](https://www.testdome.com), [Codewars](https://www.codewars.com/) and [Stack Overflow](https://stackoverflow.com/)
