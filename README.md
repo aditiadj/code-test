@@ -1,4 +1,4 @@
-# Q&A Code
+# Simple Q&A Code
 
 ### Question 1
 
@@ -237,6 +237,26 @@ function printOddEven(input) {
 
 printOddEven(input);
 alert("Total number of even: " + even + "\nTotal number of odd: " + odd);
+```
+
+### Question 7
+
+If you found a syntax below:
+```sh
+function multiply(a, b){
+  a * b
+}
+```
+
+You just add console log and return a * b like the answer below
+
+### Solution 7 
+
+```sh
+function multiply(a, b){
+  console.log(a * b);
+  return a * b;
+}
 ```
 
 Thanks to [TestDome](https://www.testdome.com), [Codewars](https://www.codewars.com/) and [Stack Overflow](https://stackoverflow.com/)
