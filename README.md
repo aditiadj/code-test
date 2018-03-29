@@ -14,7 +14,7 @@ function removeProperty(obj, prop) {
 }
 ```
 
-### Answer 1
+### Solution 1
 
 ```sh
 function removeProperty(obj, prop) {
@@ -43,7 +43,7 @@ function formatDate(userDate) {
 console.log(formatDate("12/31/2014"));
 ```
 
-### Answer 2
+### Solution 2
 
 ```sh
 function formatDate(userDate) {
@@ -107,7 +107,7 @@ $(".remove").get(0).click();
 console.log(document.body.innerHTML);
 ```
 
-### Answer 3
+### Solution 3
 
 ```sh
 function setup() {
@@ -145,7 +145,8 @@ The current version of the form contains the hint: 'The product code can be foun
 
 Improve the form so that the hint is only rendered when the input element is the focused element.
 
-#### Starting code:
+
+Starting code:
 
 ```sh
 function createProductCodeForm(parent) {
@@ -163,7 +164,7 @@ function createProductCodeForm(parent) {
 }
 ```
 
-### Answer 4
+### Solution 4
 
 ```sh
 function createProductCodeForm(parent) {
@@ -257,6 +258,27 @@ function multiply(a, b){
   console.log(a * b);
   return a * b;
 }
+```
+
+### Question 8
+
+```sh
+Implement the ensure function so that it throws an error if called without arguments or the argument is undefined. Otherwise it should return the given value.
+```
+
+### Solution 8
+
+```sh
+ function noValueException(value) {
+       this.value = value;
+       this.name = 'noValueException';
+    }
+
+    function ensure(value) {
+      if(value === undefined){
+          throw new noValueException('No argument passed');       
+      }else{ return value;}
+    }
 ```
 
 Thanks to [TestDome](https://www.testdome.com), [Codewars](https://www.codewars.com/) and [Stack Overflow](https://stackoverflow.com/)
