@@ -262,9 +262,7 @@ function multiply(a, b){
 
 ### Question 8
 
-```sh
 Implement the ensure function so that it throws an error if called without arguments or the argument is undefined. Otherwise it should return the given value.
-```
 
 ### Solution 8
 
@@ -279,6 +277,31 @@ Implement the ensure function so that it throws an error if called without argum
           throw new noValueException('No argument passed');       
       }else{ return value;}
     }
+```
+
+### Question 9
+
+Implement the removeProperty function which takes an object and property name, and does the following:
+
+If the object obj has a property prop, the function removes the property from the object and returns true; in all other cases it returns false.
+
+### Solution 9
+
+```sh
+function removeProperty(obj, prop) {
+  if (obj[prop] !== undefined) {
+    console.log(obj);
+    delete obj[prop];
+    return true;
+  }
+  return false;
+};
+
+var obj= {
+  name:'John'
+};
+
+removeProperty(obj,'name');
 ```
 
 Thanks to [TestDome](https://www.testdome.com), [Codewars](https://www.codewars.com/) and [Stack Overflow](https://stackoverflow.com/)
