@@ -367,4 +367,23 @@ function registerHandlers() {
 */
 ```
 
+### Question 12
+
+Implement the ensure function so that it throws an error if called without arguments or an argument is undefined. Otherwise it should return the given value.
+
+### Solution 12
+
+```sh
+function noValueException(value) {
+       this.value = value;
+       this.name = 'noValueException';
+    }
+
+    function ensure(value) {
+      if(value === undefined){
+          throw new noValueException('No argument passed');       
+      }else{ return value;}
+    }
+```
+
 Thanks to [TestDome](https://www.testdome.com), [Codewars](https://www.codewars.com/) and [Stack Overflow](https://stackoverflow.com/)
