@@ -386,4 +386,80 @@ function noValueException(value) {
     }
 ```
 
-Thanks to [TestDome](https://www.testdome.com), [Codewars](https://www.codewars.com/) and [Stack Overflow](https://stackoverflow.com/)
+### Question 13
+
+With the new HTML5 features, modify the form so that:
+
+- The formula input field has an autocomplete option with the following options: "sin", "cos", "tan" and "cot".
+- The iterations input field is a slider with possible values from 1 to 10.
+- The precision input field is a number picker with possible values from 1 to 100, where 50 is the default value.
+
+### Solution 13
+
+```sh
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Advanced form</title>
+    <style type="text/css">
+      
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: help;
+      }
+      
+      a:after {
+        content: "<";
+      }
+      
+      a:before {
+        content: ">";
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>
+    Stylink link
+    </h1>
+    <a href="http://www.testdome.com">Check documentation</a>
+    <br />
+    <h1>
+    
+    Simple login form
+    </h1>
+    <form id="login">
+      Email: <input type="email" name="email">
+      <br>
+      <br>
+      Password: <input type="password" name="password">
+      <input type="submit" value="Submit" name="submit">
+    </form>
+    <h1>
+    Advanced form
+    </h1>
+    <form>
+      Formula:
+      <datalist id="op">
+        <option value="sin">
+          <option value="cos">
+            <option value="tan">
+              <option value="cot">
+      </datalist>
+      <input name="formula" list="op">
+      <br /> Iterations:
+      <input name="iterations" type="range" min="1" max="10" step="1" />
+      <br /> Precision:
+      <input name="precision" type="number" min="1" max="100" value="50" />
+      <br />
+    </form>
+  </body>
+
+</html>
+```
+
+Thanks to [Github](https://github.com/skananitos/programmingChallenges/tree/master/html-css), [TestDome](https://www.testdome.com), [Codewars](https://www.codewars.com/) and [Stack Overflow](https://stackoverflow.com/)
