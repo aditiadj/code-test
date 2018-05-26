@@ -461,5 +461,34 @@ With the new HTML5 features, modify the form so that:
 
 </html>
 ```
+### Question 14
+
+Task
+Given a Divisor and a Bound, Find the largest integer N, such that
+
+Conditions :
+- N is divisible by divisor
+- N is less than or equal to bound
+- N is greater than 0.
+
+Notes
+The parameters (divisor, bound) passed to the function are only positve values
+It's guaranteed that a divisor is Found
+
+Input > Output Examples:
+```maxMultiple (2,7) ==> return (6)```
+
+Explanation:
+(6) is divisible by (2) , (6) is less than or equal to bound (7) , and (6) is > 0
+
+### Solution 14
+
+```
+function maxMultiple(d, b) {
+    return b-b%d
+}
+console.log(maxMultiple(2,7))
+```
+
 
 Thanks to [Github](https://github.com/skananitos/programmingChallenges/tree/master/html-css), [TestDome](https://www.testdome.com), [Codewars](https://www.codewars.com/) and [Stack Overflow](https://stackoverflow.com/)
