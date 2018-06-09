@@ -490,5 +490,26 @@ function maxMultiple(d, b) {
 console.log(maxMultiple(2,7))
 ```
 
+### Question 15
+
+Given a number, write a function to output its reverse digits. (e.g. given 123 the answer is 321)
+
+Numbers should preserve their sign; i.e. a negative number should still be negative when reversed.
+
+Examples:
+```
+123 ->  321
+-456 -> -654
+1000 ->    1
+```
+
+### Solution 15
+
+```
+function reverseNumber(n) {
+  const newNum = n.toString().split("").reverse().join("")
+  return parseInt(newNum) * Math.sign(n)
+}
+```
 
 Thanks to [Github](https://github.com/skananitos/programmingChallenges/tree/master/html-css), [TestDome](https://www.testdome.com), [Codewars](https://www.codewars.com/) and [Stack Overflow](https://stackoverflow.com/)
