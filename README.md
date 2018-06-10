@@ -512,4 +512,20 @@ function reverseNumber(n) {
 }
 ```
 
+### Question 16
+
+Given a number, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3 sheep..."
+
+Note:
+You will always receive a positive integer.
+
+### Solution 16
+
+```
+let countSheep = num => {
+  let str = `${num} sheep...`;
+  return num == 1 ? str : countSheep(num - 1) + str;
+} 
+```
+
 Thanks to [Github](https://github.com/skananitos/programmingChallenges/tree/master/html-css), [TestDome](https://www.testdome.com), [Codewars](https://www.codewars.com/) and [Stack Overflow](https://stackoverflow.com/)
