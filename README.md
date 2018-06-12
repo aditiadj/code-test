@@ -528,4 +528,27 @@ let countSheep = num => {
 } 
 ```
 
+### Question 17
+
+This is a positive triangle:
+```
+   o   
+  o o  
+ o o o
+```
+Turn it into an inverted triangle. How many points need to be moved at least?
+```
+   o     How many points     o o o
+  o o    --------------->     o o
+ o o o   need to be moved      o
+```
+Complete function leastMove. An argument side will be given. It's the side length of the triangle. You need to calculate and return the minimum number of moves.
+
+### Solution 17
+```
+function leastMove(side) {
+  return Math.floor(side * (side + 1) / 6);
+}
+```
+
 Thanks to [Github](https://github.com/skananitos/programmingChallenges/tree/master/html-css), [TestDome](https://www.testdome.com), [Codewars](https://www.codewars.com/) and [Stack Overflow](https://stackoverflow.com/)
