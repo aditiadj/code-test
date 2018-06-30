@@ -566,4 +566,20 @@ public static class Kata
 }
 ```
 
+### Question 19
+
+Find the opposite number.
+Examples:
+```
+1: -1
+10: -10
+```
+
+### Solution 19
+```
+function opposite(number) {
+  return(-number);
+}
+```
+
 Thanks to [Github](https://github.com/skananitos/programmingChallenges/tree/master/html-css), [TestDome](https://www.testdome.com), [Codewars](https://www.codewars.com/) and [Stack Overflow](https://stackoverflow.com/)
