@@ -582,4 +582,16 @@ function opposite(number) {
 }
 ```
 
+### Question 20
+
+It's pretty straightforward. Your goal is to create a function that removes the 'FIRST' and 'LAST' characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+
+### Solution 20
+```
+function removeChar(str) {
+  return str.slice(1, -1);
+}
+console.log(removeChar('eloquent'))
+```
+
 Thanks to [Github](https://github.com/skananitos/programmingChallenges/tree/master/html-css), [TestDome](https://www.testdome.com), [Codewars](https://www.codewars.com/) and [Stack Overflow](https://stackoverflow.com/)
