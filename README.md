@@ -594,4 +594,29 @@ function removeChar(str) {
 console.log(removeChar('eloquent'))
 ```
 
+### Qestion 21
+
+Remove all duplicate words from string, leaving only single words entries.
+
+Example:
+
+Input:
+
+```
+alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta
+```
+
+Output:
+```
+alpha beta gamma delta
+```
+
+### Solution 21
+```
+const removeDuplicateWords = s => {
+  const set = new Set(s.split(' '));
+  return Array.from(set).join(' ');
+}
+```
+
 Thanks to [Github](https://github.com/skananitos/programmingChallenges/tree/master/html-css), [TestDome](https://www.testdome.com), [Codewars](https://www.codewars.com/) and [Stack Overflow](https://stackoverflow.com/)
