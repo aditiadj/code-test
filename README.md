@@ -594,7 +594,7 @@ function removeChar(str) {
 console.log(removeChar('eloquent'))
 ```
 
-### Qestion 21
+### Question 21
 
 Remove all duplicate words from string, leaving only single words entries.
 
@@ -616,6 +616,23 @@ alpha beta gamma delta
 const removeDuplicateWords = s => {
   const set = new Set(s.split(' '));
   return Array.from(set).join(' ');
+}
+```
+
+### Question 22
+In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+
+Example:
+```
+filter_list([1,2,'a','b']) == [1,2]
+filter_list([1,'a','b',0,15]) == [1,0,15]
+filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+```
+
+### Solution 22
+```
+function filter_list(l) {
+  return l.filter(Number.isInteger);
 }
 ```
 
