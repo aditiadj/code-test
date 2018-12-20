@@ -636,4 +636,16 @@ function filter_list(l) {
 }
 ```
 
+### Question 23
+Sum all numbers till the given one
+
+### Solution 23
+```
+function sumTo(n) {
+  return n * (n + 1) / 2;
+}
+
+console.log(sumTo(99));
+```
+
 Thanks to [Github](https://github.com/skananitos/programmingChallenges/tree/master/html-css), [TestDome](https://www.testdome.com), [Codewars](https://www.codewars.com/) and [Stack Overflow](https://stackoverflow.com/)
