@@ -648,4 +648,18 @@ function sumTo(n) {
 console.log(sumTo(99));
 ```
 
+### Question 24
+How to reverse number?
+
+### Solution 24
+```
+const reverseNumber = number => {
+ let x = Math.pow(10, (number + '').length - 1);
+ while (number > 0) return (number % 10) * x + reverseNumber(Math.floor(number / 10));
+ return 0;
+}
+
+console.log(reverseNumber(1234));
+```
+
 Thanks to [Github](https://github.com/skananitos/programmingChallenges/tree/master/html-css), [TestDome](https://www.testdome.com), [Codewars](https://www.codewars.com/) and [Stack Overflow](https://stackoverflow.com/)
